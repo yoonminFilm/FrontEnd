@@ -1,0 +1,20 @@
+/* nav */
+.navbar{
+    border-bottom: 1px solid;
+    border-color: #ebebeb;
+}
+.navbar .navbar-items{
+    padding: 0.3% 1%;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+footer a{
+    text-decoration: underline;
+    color: rgb(44, 44, 44);
+}
