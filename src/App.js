@@ -6,16 +6,26 @@ import MainPage from './features/mainPage/pages/MainPage'
 import AboutPage from './features/aboutPage/pages/AboutPage';
 import ProjectPage from './features/projectPage/pages/ProjectPage';
 import ShopPage from './features/shopPage/pages/ShopPage';
+import FilmDigitalWorkPage from './features/projectPage/pages/FilmDigitalWorkPage';
+import UrbanPatternPage from './features/projectPage/pages/UrbanPatternPage';
+import SnapPage from './features/projectPage/pages/SnapPage';
+import FilmVideoWorkPage from './features/projectPage/pages/FilmVideoWorkPage';
+import YoutubeWorkPage from './features/projectPage/pages/YoutubeWorkPage';
 
 function App() {
   return (
     <div className="App">
       <NavbarComponents />
       <Routes>
-        <Route path="/" elements={<MainPage/>}></Route>
-        <Route path="/about" elements={<AboutPage/>}></Route>
-        <Route path="/project" elements={<ProjectPage/>}></Route>
-        <Route path="/shop" elements={<ShopPage/>}></Route>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/project/urbanPattern" element={<ProjectPage />} />
+        <Route path="/project/mainWorkPhoto" element={<FilmDigitalWorkPage />} />
+        <Route path="/project/urbanPattern" element={<UrbanPatternPage/>} />
+        <Route path="/project/snap" element={<SnapPage />} />
+        <Route path="/project/mainWorkVideo" element={<FilmVideoWorkPage />} />
+        <Route path="/project/youtubeWork" element={<YoutubeWorkPage />} /> 
+        <Route path="/shop" element={<ShopPage />} />
       </Routes>
       <FooterComponents />
       </div>

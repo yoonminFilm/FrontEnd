@@ -1,4 +1,4 @@
-import React,{Link} from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -10,25 +10,28 @@ function NavbarComponents() {
     <>
       <Navbar bg="light" data-bs-theme="light" className='navbar'>
         <Container className='navbar-items'>
-          <Navbar.Brand to="/"><b>yoonmin_film</b></Navbar.Brand>
+          <Navbar.Brand href="/"><b>YoonMin FILM</b></Navbar.Brand>
           <Nav className="me-auto">
             <NavDropdown title="Project" id="basic-nav-dropdown">
-              <NavDropdown.Item to="project/3.1">
-              Film
+              <NavDropdown.Item href="../project/mainWorkPhoto">
+                Film & Digita Work
               </NavDropdown.Item>
-              <NavDropdown.Item to="project/3.2">
-                Digital
+              <NavDropdown.Item href="../project/urbanPattern">
+                Urban Pattern
               </NavDropdown.Item>
-              <NavDropdown.Item to="project/3.3">
-              Urban Pattern
+              <NavDropdown.Item href="../project/snap">
+                Snap
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item to="project/3.4">
-                Video
+              <NavDropdown.Item href="../project/mainWorkVideo">
+                yoonminFilim
+              </NavDropdown.Item>
+              <NavDropdown.Item href="../project/youtubeWork">
+                Youtube
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link to="/AboutPage">about</Nav.Link>
-            <Nav.Link to="/ShopPage">shop</Nav.Link>
+            <Nav.Link href="/about">about</Nav.Link>
+            <Nav.Link href="/shop">shop</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
