@@ -11,6 +11,7 @@ import UrbanPatternPage from './features/projectPage/pages/UrbanPatternPage';
 import SnapPage from './features/projectPage/pages/SnapPage';
 import FilmVideoWorkPage from './features/projectPage/pages/FilmVideoWorkPage';
 import YoutubeWorkPage from './features/projectPage/pages/YoutubeWorkPage';
+import './assets/fonts/Pretendard/web/static/pretendard.css'
 
 function App() {
   return (

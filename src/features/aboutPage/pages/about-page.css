@@ -1,0 +1,94 @@
+/* global setting */
+h1{
+    font-family: "Pretendard" sans-serif;
+    font-size: 3vw;
+}
+label{
+    font-size: 1.6vw;
+}
+.strong-text{
+    margin-right: 5px;
+}
+
+/* 메인 페이지 */
+.about-page-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+}
+
+.about-page-img{
+    height: 85vh;
+    border-radius: 10px;
+    margin: 4vh 0;
+    position: relative;
+    top: 2vh;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05); /* 다중 그림자 */
+    padding: 20px;
+}
+
+.open-overlay-btn{
+    position: relative;
+    bottom: 4vh;
+}
+/* 문의 SECTION */
+.inquiry-container{
+    text-align: start;
+}
+.form-group{
+    margin: 2vh 0;
+}
+
+p, h1{
+    color: #333;
+}
+
+/* 네임 인풋 */
+.name-inputs{
+    display: flex;
+    justify-content: center;
+    }
+    .name-input{
+        width:  50vw;
+        height: 5vh;
+        margin-top: 1vh;
+    }
+    .name-input:first-child{
+        width:  50vw;
+        margin-right: 1vw;
+    }
+    .name-input:last-child{
+        width:  50vw;
+        margin-left: 1vw;
+    }
+
+/* 이메일 인풋 */
+.email-inputs{ 
+    display: flex;
+    flex-direction: column;
+    }
+    .email-inputs input{
+        margin-top: 1vh;
+        height: 5vh;
+    }
+
+/* 메세지 인풋 */
+.message-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .message-inputs textarea{
+        height: 13vh;
+    }
+
+.date-inputs{
+    margin-bottom: 4vh;
+    }
+    .date-inputs input{
+        height: 5vh;
+        width: 12vw;
+    }

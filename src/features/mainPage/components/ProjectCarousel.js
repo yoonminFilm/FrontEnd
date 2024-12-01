@@ -5,9 +5,9 @@ import './projectCarousel.css'
 function ProjectCarousel() {
   const filmDigitalMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/film_main_img.jpg";
   const urbanpatternMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/urbanpattern_main_img.jpg";
-  const snapMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/snap_main_img.jpeg";
+  const snapMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/snap_main_image.JPG";
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel data-bs-theme="white">
       <Carousel.Item>
         <Link to="../project/mainWorkPhoto">
         <img

@@ -1,0 +1,12 @@
+.Card{
+    /* margin: 0;     */
+}
+
+.Card img{
+    padding-top: 1em;
+    height: 30vh;
+}
+
+.cardText{
+    color: black;
+}

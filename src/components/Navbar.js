@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './components.css'
 
 function NavbarComponents() {
+  
   return (
     <>
       <Navbar bg="light" data-bs-theme="light" className='navbar'>
@@ -30,8 +31,8 @@ function NavbarComponents() {
                 Youtube
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/about">about</Nav.Link>
-            <Nav.Link href="/shop">shop</Nav.Link>
+            <Nav.Link href="/about" >about</Nav.Link>
+            <Nav.Link href="/shop" >shop</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -1,10 +1,17 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
 import ShopCard from "../components/ShopCard";
+import { Row } from "react-bootstrap";
 
 const ShopPage =()=>{
     return(
         <>
-        <ShopCard />
+            <Container >       
+                <Row>
+                <ShopCard />
+                <ShopCard />
+                </Row>
+            </Container>
         </>
     );
 }

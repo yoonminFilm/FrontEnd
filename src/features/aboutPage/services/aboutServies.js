@@ -1,13 +1,42 @@
-import axios from 'axios';
+import axios from "axios";
 
-export const fetchDashboardStats = async () => {
-  try {
-    const response = await axios.get('http://localhost:3003/api/sample');
-    // const response = { data: { users: 100, sales: 200, visits: 300 } };
-    console.log('response.data:', response.data);
-    return response.data;
-  } catch (error) {
-    console.error('대시보드 통계 데이터 가져오기 실패:', error);
-    return { users: 0, sales: 0, visits: 0 }; 
-  }
+// Axios instance with default settings
+const api = axios.create({
+    baseURL: "http://localhost:5002", // Replace with your API base URL
+    headers: {
+        "Content-Type": "application/json",
+    },
+});
+
+// GET: Fetch inquiries
+export const getInquiries = async () => {
+    try {
+        const response = await api.get("/inquiries");
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching inquiries:", error);
+        throw error;
+    }
+};
+
+// POST: Add a new inquiry
+export const postInquiry = async (inquiryData) => {
+    try {
+        const response = await api.post("/inquiries", inquiryData);
+        return response.data;
+    } catch (error) {
+        console.error("Error adding inquiry:", error);
+        throw error;
+    }
+};
+
+// DELETE: Delete an inquiry by ID
+export const deleteInquiry = async (id) => {
+    try {
+        const response = await api.delete(`/inquiries/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error("Error deleting inquiry:", error);
+        throw error;
+    }
 };
