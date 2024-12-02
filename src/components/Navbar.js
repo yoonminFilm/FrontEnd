@@ -15,13 +15,20 @@ function NavbarComponents() {
           <Nav className="me-auto">
             <NavDropdown title="Project" id="basic-nav-dropdown">
               <NavDropdown.Item href="../project/mainWorkPhoto">
-                Film & Digita Work
+                Original(Digital)
               </NavDropdown.Item>
-              <NavDropdown.Item href="../project/urbanPattern">
-                Urban Pattern
+              <NavDropdown.Item href="../project/mainWorkPhoto">
+                Film
               </NavDropdown.Item>
               <NavDropdown.Item href="../project/snap">
                 Snap
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="../project/urbanPattern">
+                Urban Pattern
+              </NavDropdown.Item>
+              <NavDropdown.Item href="../project/reflectingCity">
+                Reflecting City
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="../project/mainWorkVideo">

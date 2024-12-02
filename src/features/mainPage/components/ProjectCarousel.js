@@ -6,6 +6,8 @@ function ProjectCarousel() {
   const filmDigitalMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/film_main_img.jpg";
   const urbanpatternMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/urbanpattern_main_img.jpg";
   const snapMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/snap_main_image.JPG";
+  const reflectingCityMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/urbanpattern_main_img.jpg";
+  
   return (
     <Carousel data-bs-theme="white">
       <Carousel.Item>
@@ -17,7 +19,9 @@ function ProjectCarousel() {
         />
         <Carousel.Caption>
           <h5>Project 1. Film & Digital Work</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <p style={{color:"white"}}>
+            Original, Film & Digital work
+          </p>
         </Carousel.Caption>
         </Link>
       </Carousel.Item>
@@ -30,7 +34,24 @@ function ProjectCarousel() {
         />
         <Carousel.Caption>
           <h5>Project 2. Urbanpattern of City</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p style={{color:"white"}}>
+            Original, Urban Pattern
+          </p>
+        </Carousel.Caption>
+        </Link>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Link to="../project/reflectingCity">
+        <img
+          className="d-block w-100"
+          src={reflectingCityMainImg}
+          alt="reflecting city"
+        />
+        <Carousel.Caption>
+          <h5>Project 3. Reflecting City</h5>
+          <p style={{color:"white"}}>
+            Capturing the city created by light with water
+          </p>
         </Carousel.Caption>
         </Link>
       </Carousel.Item>
@@ -42,9 +63,9 @@ function ProjectCarousel() {
           alt="Snap"
         />
         <Carousel.Caption>
-          <h5>Project 3. Snap</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          <h5>Project 4. Portrait Snap</h5>
+          <p style={{color:"white"}}>
+            Cinematic, Original portrait snap.
           </p>
         </Carousel.Caption>
         </Link>

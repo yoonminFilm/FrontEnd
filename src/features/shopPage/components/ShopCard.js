@@ -1,18 +1,19 @@
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import'./shopCard.css';
 
-function ShopCard() {
+const  ShopCard =({title, description, imageUrl, onButtonClick}) =>{
     const shopImgExample ="https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/shop_example_img.jpg";
   return (
-    <Card style={{ width: '18rem'}} className="Card">
-      <Card.Img variant="top" src={shopImgExample} />
-      <Card.Body>
-        <Card.Title>Shop Card Example</Card.Title>
-        <Card.Text className="cardText">
-          상품 예제를 위한 카드 입니다.
+    <Card className="Card">
+      <Card.Img variant="top" className="card-img" src={imageUrl} />
+      <Card.Body className='card-info-body'>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text className="card-text">
+          {description}
         </Card.Text>
-        <Button variant="primary">자세히보기</Button>
+        <Button className='card-button' variant="light" onClick={onButtonClick}>자세히 보기</Button>
       </Card.Body>
     </Card>
   );

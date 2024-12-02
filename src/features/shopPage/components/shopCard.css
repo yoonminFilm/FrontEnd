@@ -1,12 +1,38 @@
+h5, p{
+    color: #333;
+}
+
 .Card{
-    /* margin: 0;     */
-}
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.1), 0 7px 7px rgba(0,0,0,0.1);
+    width: 21vw;
+    height: auto;
+    }
 
-.Card img{
-    padding-top: 1em;
-    height: 30vh;
-}
+    .Card .card-img{
+        margin-top: 1vh;
+        border-radius: 2%;
+        width: 95%;
+        height: 30vh;
+        border: 1px solid rgb(255, 255, 255);
+    }
 
-.cardText{
-    color: black;
-}
+    
+    .card-info-body{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card-text{ 
+        color: #333;
+    }
+
+    .card-button{
+        height: 6vh;
+        border:1px solid rgb(255, 255, 255);
+    }
+

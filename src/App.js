@@ -12,6 +12,7 @@ import SnapPage from './features/projectPage/pages/SnapPage';
 import FilmVideoWorkPage from './features/projectPage/pages/FilmVideoWorkPage';
 import YoutubeWorkPage from './features/projectPage/pages/YoutubeWorkPage';
 import './assets/fonts/Pretendard/web/static/pretendard.css'
+import ReflectingCityWorkPage from './features/projectPage/pages/ReflectingCityWorkPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/project/urbanPattern" element={<ProjectPage />} />
+        <Route path="/project/reflectingCity" element={<ReflectingCityWorkPage />} />
         <Route path="/project/mainWorkPhoto" element={<FilmDigitalWorkPage />} />
         <Route path="/project/urbanPattern" element={<UrbanPatternPage/>} />
         <Route path="/project/snap" element={<SnapPage />} />
