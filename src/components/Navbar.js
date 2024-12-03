@@ -20,9 +20,6 @@ function NavbarComponents() {
               <NavDropdown.Item href="../project/mainWorkPhoto">
                 Film
               </NavDropdown.Item>
-              <NavDropdown.Item href="../project/snap">
-                Snap
-              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="../project/urbanPattern">
                 Urban Pattern
@@ -31,12 +28,15 @@ function NavbarComponents() {
                 Reflecting City
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="../project/mainWorkVideo">
+              <NavDropdown.Item href="../project/snap">
+                Snap
+              </NavDropdown.Item>
+              {/* <NavDropdown.Item href="../project/mainWorkVideo">
                 yoonminFilim
               </NavDropdown.Item>
               <NavDropdown.Item href="../project/youtubeWork">
                 Youtube
-              </NavDropdown.Item>
+              </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="/about" >about</Nav.Link>
             <Nav.Link href="/shop" >shop</Nav.Link>
