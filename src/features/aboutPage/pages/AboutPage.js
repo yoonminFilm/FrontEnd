@@ -65,7 +65,7 @@ const AboutPage = () =>{
         <>
            <Container>
                 <Row className="justify-content-md-center">
-                    <Col xs={8} md={8}>
+                    <Col xs="auto" md={8}>
                         <AboutText />
                         <Button onClick={() => setOverlayVisible(true)} className="open-overlay-btn" variant="secondary">
                         문의 요청
@@ -185,7 +185,7 @@ const AboutPage = () =>{
                         </OverlayViewPage>
                     </Col>
                     <Col></Col>
-                    <Col xs={8} md={3}>
+                    <Col md={3}>
                         <Row>
                             <Image src={personalImg} alt="Sumgin Yoon Img" className="about-page-img" />
                         </Row>

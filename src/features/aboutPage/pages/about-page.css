@@ -121,4 +121,16 @@ p, h1{
         width: 12vw;
     }
 
-    
+@media screen and (max-width: 440px) {
+    /* about portrait img */
+    .about-page-img{
+        display: none;
+    }
+    .about-page-text{
+        height: 85vh;
+    }
+    .btn-secondary{
+        width: 40vw;
+        height: 6vh;
+    }   
+}
