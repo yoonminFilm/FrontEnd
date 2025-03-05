@@ -9,6 +9,13 @@ label{
 .strong-text{
     margin-right: 5px;
 }
+.hr-divider {
+    width: 50px; /* 구분선 길이 */
+    height: 1px; /* 구분선 두께 */
+    background-color: #c5c5c5; /* 연한 회색 */
+    border: none; /* 기본 선 제거 */
+    margin: 10px auto; /* 위아래 간격 조절 및 중앙 정렬 */
+}
 
 /* 메인 페이지 */
 .about-page-text{
@@ -17,6 +24,27 @@ label{
     justify-content: center;
     align-items: center;
     height: 83vh;
+}
+.about-page-text ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.about-page-text li{
+    margin:  0.9vh 0 0 0 ;
+}
+
+.about-page-text a{
+    color: #000;
+    text-decoration-line: none;
+    display: inline-block; /* 변형 효과를 적용하기 위해 필요 */
+    transition: transform 0.5s ease, font-size 0.1s ease;
+}
+
+.about-page-text a:hover{
+    color: #f32121;
+    text-decoration-line: none;
+    transform: translateY(-1px) scale(1.1);
 }
 
 .about-page-img{
@@ -92,3 +120,5 @@ p, h1{
         height: 5vh;
         width: 12vw;
     }
+
+    

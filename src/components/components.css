@@ -4,6 +4,7 @@
 
 /* nav */
 .navbar{
+    margin: 0;
     border-bottom: 1px solid;
     border-color: #ebebeb;
 }
@@ -18,17 +19,31 @@
   }
 
 .navbar .navbar-items{
-    padding: 0.3% 1%;
+    padding: 0.1% 1%;
 }
 
 /* footer */
 .footer-svg{
-    width: 1vw;
-    height: auto;
+    width: auto;
+    height: 2vh;
+    color: #333;
 }
+
 .footer-text{
     font-size: 1vw;
     height: auto;
     color: rgb(33,37,41);
     padding-top: 0.5vh;
+}
+
+@media screen and (max-width: 440px) {
+    /* navbar */
+    .navbar{
+        margin: 0 5vw;
+    }
+    /* footer */
+    .footer-text{
+        font-size: 2vw;
+    }
+    
 }
