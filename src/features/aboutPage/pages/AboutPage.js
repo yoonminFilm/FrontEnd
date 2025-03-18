@@ -74,6 +74,9 @@ const AboutPage = () =>{
                             <div className="inquiry-container">
                                 <h1>Send inquiry</h1>
                                 <form onSubmit={handleSubmit}>
+                                    <span>
+                                        <a href="http://pf.kakao.com/_xmyjnn" target="blank">카카오톡으로 신청하기(only for Korean)</a>
+                                    </span>
                                     {/* Name Section */}
                                     <div className="form-group">
                                         <label>
@@ -133,7 +136,7 @@ const AboutPage = () =>{
                                             looking for.
                                         </p>
                                         <div className="session-buttons ">
-                                            {["PORTRAIT", "WEDDING", "COMMERCIAL", "COOPERATION", "OTHER"].map((type) => (
+                                            {["PORTRAIT(개인, 커플, 우정)", "WEDDING(결혼)", "COMMERCIAL(상업)", "COOPERATION(협업)", "OTHER(기타)"].map((type) => (
                                                 <Button
                                                     type="button"
                                                     variant="light"
@@ -165,8 +168,8 @@ const AboutPage = () =>{
 
                                     {/* Session Date Section */}                                    
                                     <div className="form-group date-inputs">
-                                        <label>Session date</label>
-                                        <p>Please provide a preferred date for the photoshoot session.</p>
+                                        <label>Desired task schedule</label>
+                                        <p>Please provide task schedule for the photoshoot session.</p>
                                         <input
                                             type="date"
                                             required

@@ -10,6 +10,7 @@ import './assets/fonts/Pretendard/web/static/pretendard.css'
 import ReflectingCityWorkPage from './features/projectPage/pages/ReflectingCityWorkPage';
 import UrbanpatternWorkPage from './features/projectPage/pages/UrbanPatternWorkPage';
 import PortraitSnapWorkPage from './features/projectPage/pages/PortraitSnapWorkPage';
+import CollaborativeWorkPage from './features/projectPage/pages/WorkCooperationPagePage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/project/urbanPattern" element={<UrbanpatternWorkPage/>} />
         <Route path="/project/reflectingCity" element={<ReflectingCityWorkPage />} />
         <Route path="/project/snap" element={<PortraitSnapWorkPage />} />
+        <Route path="/project/collaboWork" element={<CollaborativeWorkPage />} />
         {/* <Route path="/project/mainWorkVideo" element={<FilmVideoWorkPage />} />
         <Route path="/project/youtubeWork" element={<YoutubeWorkPage />} />  */}
         <Route path="/shop" element={<ShopPage />} />

@@ -31,6 +31,9 @@ function NavbarComponents() {
               <NavDropdown.Item href="../project/snap">
                 Snap
               </NavDropdown.Item>
+              <NavDropdown.Item href="../project/collaboWork">
+                Collaborative work
+              </NavDropdown.Item>
               {/* <NavDropdown.Item href="../project/mainWorkVideo">
                 yoonminFilim
               </NavDropdown.Item>
