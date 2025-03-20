@@ -7,6 +7,7 @@ import AboutText from "../components/AboutText";
 import OverlayViewPage from "../../../components/OverlayView";
 import Button from 'react-bootstrap/Button';
 import { postInquiry } from "../services/aboutServies";
+import './about-page.css';
 
 
 const AboutPage = () =>{
@@ -95,15 +96,15 @@ const AboutPage = () =>{
                                                 value={formData.firstName}
                                                 onChange={handleInputChange}
                                             />
-                                            <input
-                                                type="text"
-                                                placeholder="Last Name"
-                                                required
-                                                className="name-input"
-                                                name="lastName"
-                                                value={formData.lastName}
-                                                onChange={handleInputChange}
-                                            />
+                                        <input
+                                            type="text"
+                                            placeholder="Last Name"
+                                            required
+                                            className="name-input"
+                                            name="lastName"
+                                            value={formData.lastName}
+                                            onChange={handleInputChange}
+                                        />
                                         </div>
                                     </div>
 
@@ -136,7 +137,7 @@ const AboutPage = () =>{
                                             looking for.
                                         </p>
                                         <div className="session-buttons ">
-                                            {["PORTRAIT(개인, 커플, 우정)", "WEDDING(결혼)", "COMMERCIAL(상업)", "COOPERATION(협업)", "OTHER(기타)"].map((type) => (
+                                            {["PORTRAIT(Solo, Couple, Family)", "WEDDING", "COMMERCIAL", "COOPERATION", "OTHER"].map((type) => (
                                                 <Button
                                                     type="button"
                                                     variant="light"
@@ -154,8 +155,9 @@ const AboutPage = () =>{
 
                                     {/* Message Section */}
                                     <div className="form-group flex message-inputs">                                        
-                                        <label>
-                                            Message <span className="required">(required)</span>
+                                        <label className="strong-text">
+                                            <strong>Message</strong> 
+                                            <span className="required">(required)</span>
                                         </label>
                                         <textarea 
                                             placeholder="Enter your message here..." 
@@ -168,9 +170,14 @@ const AboutPage = () =>{
 
                                     {/* Session Date Section */}                                    
                                     <div className="form-group date-inputs">
-                                        <label>Desired task schedule</label>
+                                        <label className="strong-text">
+                                            <strong>
+                                                Desired task schedule
+                                            </strong>                                             
+                                        </label>
                                         <p>Please provide task schedule for the photoshoot session.</p>
                                         <input
+                                            className="session-date-input"
                                             type="date"
                                             required
                                             name="sessionDate"
