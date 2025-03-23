@@ -12,14 +12,19 @@
     color: rgb(33,37,41);
 }
 
-/* 기본 스타일 */
 .nav-item {
     text-decoration: none;
     color: #333;
-  }
+}
 
 .navbar .navbar-items{
     padding: 0.1% 1%;
+}
+
+.banner-img{
+    max-height: 4.3vh;
+    transform: translateY(3px);
+    filter: drop-shadow(0.3px 0 #333) drop-shadow(-0.3px 0 #333);
 }
 
 /* footer */
@@ -30,7 +35,7 @@
 }
 
 .footer-text{
-    font-size: 1vw;
+    font-size: 0.8vw;
     height: auto;
     color: rgb(33,37,41);
     padding-top: 0.5vh;

@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import BannerLogo from '../assets/images/banner-img.png';
 import './components.css'
 
 function NavbarComponents() {
@@ -11,7 +12,8 @@ function NavbarComponents() {
     <>
       <Navbar bg="light" data-bs-theme="light" className='navbar'>
         <Container className='navbar-items'>
-          <Navbar.Brand href="/"><b>YoonMin FILM</b></Navbar.Brand>
+          {/* <Navbar.Brand href="/"><b>Yoonmin.Film</b></Navbar.Brand> */}
+          <Navbar.Brand href='/'><img src={BannerLogo} alt="logo" className='banner-img'/></Navbar.Brand>
           <Nav className="me-auto">
             <NavDropdown title="Project" id="basic-nav-dropdown">
               <NavDropdown.Item href="../project/mainWorkPhoto">
