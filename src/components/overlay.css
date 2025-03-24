@@ -84,6 +84,20 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (min-width:480px) and (max-width:767px) {    
+    /* overlay mobile page */
+      .overlay-content{
+        max-width: 90vw;
+        max-height: 90%;
+        padding: 4vw;
+    }
+    .submit-button{
+        text-align: center;
+        max-width: 70vw;        
+    }
+}
+
 @media screen and (max-width: 440px) {
     .close-icon{
         font-size: 1.2rem; /* 크기 조정 */
@@ -91,8 +105,8 @@
     /* overlay mobile page */
     .overlay-content{
         max-width: 90vw;
-        max-height: 90%;
-        padding: 4vw;
+        max-height: 87%;
+        padding: 1vh 2vw;
     }
 
     .submit-button{

@@ -5,22 +5,25 @@ const AboutText = ()=>{
     return(
         <>
             <div className="about-page-text">
-                <h6><b>Sungmin Yoon is a photographer based in Korea.</b></h6>
+                <h6>
+                    <b>Sungmin Yoon is a photographer based in Korea.</b>
+                </h6>
+                <p>
                 소프트웨어 개발자로 윤민 필름 계정을 운영 중이며 <br/> '사랑'과 '도시의 패턴'을 주제로 사진 및 영상 활동을 하고있다.
-                <hr class="hr-divider"></hr>
+                </p>
                 <ul>
                     <h6><b>⌜Project⌟</b></h6>
                     <li>
-                        <strong> Original</strong><br/>
-                        다양한 형태의 '사랑'을 찍고 써내려가며 일상의 기록을 남긴다.
+                        <b> Original</b><br/>
+                        <p>다양한 형태의 '사랑'을 찍고 써내려가며 일상의 기록을 남긴다.</p>
                     </li>
                     <li>
-                        <strong> Urban pattern, Reflect cities</strong><br/>
-                        매번 반복되는 지겨운 일상의 도시 빌딩 숲 사이에 내려 앉는 빛들을 담아낸다.<br/>
-                        공간의 반복이 아닌 유기적으로 살아 숨 쉬는 도시를 표현하고자한다.
+                        <b> Urban pattern, Reflect cities</b><br/>
+                        <p>매번 반복되는 지겨운 일상의 도시 빌딩 숲 사이에 내려 앉는 빛들을 담아낸다.<br/>
+                        공간의 반복이 아닌 유기적으로 살아 숨 쉬는 도시를 표현하고자한다.</p>
                     </li>
                     <li>
-                        <strong> Filming & Editing(Youtube)</strong><br/>
+                        <b> Filming & Editing(Youtube)</b><br/>
                         <a href="https://www.youtube.com/@friendly-dark-army">FDA(FriendlyDarkArmy)</a><br />
                         <a href="https://www.youtube.com/@zacchaeus.worship">삭개오 워십(zacchaeus worship)</a>
                     </li>
@@ -35,7 +38,7 @@ const AboutText = ()=>{
                 </a>
                 <hr class="hr-divider"></hr>
                 <h6><b>⌜Featured in⌟</b></h6>
-                Fujifilm, Monthlyphoto(월간사진), Classics Film Club, AeroK & Flimlog
+                <p>Fujifilm, Monthlyphoto(월간사진), Classics Film Club, AeroK & Flimlog</p>
                 <br/>
             </div>
         </>

@@ -61,6 +61,7 @@ label{
 .open-overlay-btn{
     position: relative;
     bottom: 4vh;
+    width: 20vw;
 }
 
 /* 문의 SECTION */
@@ -121,8 +122,41 @@ p, h1{
         height: 5vh;
         width: 12vw;
     }
+.move-kakaotalk-text{
+    color: #f32121;
+}
 
-@media screen and (max-width: 440px) {
+/* about page button */
+.submit-button[type="submit"]{
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 100%;
+    max-width: 90vw;   
+}
+.session-date-input[type="date"]{
+    width: 100%;
+    max-width: 90vw;
+    height: 6vh;
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+
+    /* about portrait img */
+    .about-page-text{
+        height: 85vh;
+        font-size: large;
+    }
+    /* Overlay button */
+    .open-overlay-btn{
+        width: 50vw;
+        height: 5vh;
+    }
+    /* about portrait img */
+    .about-page-img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 479px) {
     /* global setup */
         .strong-text{
             font-size: large;
@@ -137,6 +171,7 @@ p, h1{
     }
     .about-page-text{
         height: 85vh;
+        font-size: small;
     }
     .btn-secondary{
         width: 40vw;
@@ -155,18 +190,6 @@ p, h1{
         width: 100%;
         max-width: 90vw;
         margin: 1vh 0 !important;
-    }
-
-    /* about page button */
-    .submit-button[type="submit"]{
-        background-color: rgba(51, 51, 51, 0.7);
-        width: 100%;
-        max-width: 90vw;   
-    }
-
-    .session-date-input[type="date"]{
-        width: 100%;
-        max-width: 90vw;
     }
 
 }

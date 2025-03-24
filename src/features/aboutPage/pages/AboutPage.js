@@ -75,8 +75,8 @@ const AboutPage = () =>{
                             <div className="inquiry-container">
                                 <h1>Send inquiry</h1>
                                 <form onSubmit={handleSubmit}>
-                                    <span>
-                                        <a href="http://pf.kakao.com/_xmyjnn" target="blank">카카오톡으로 신청하기(only for Korean)</a>
+                                    <span >
+                                        <a className="move-kakaotalk-text" href="http://pf.kakao.com/_xmyjnn" target="blank">카카오톡으로 신청하기(only for Korean)</a>
                                     </span>
                                     {/* Name Section */}
                                     <div className="form-group">
