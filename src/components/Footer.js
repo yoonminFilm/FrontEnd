@@ -12,7 +12,7 @@ function FooterComponents() {
       <Container>
           <Row className="justify-content-md-center">        
             <Col xs={5} sm={4} className='justify-content-md-start  align-items-end'>
-            <h2 className='footer-text'>© 2024 SungminYoon All rights reserved.</h2>
+              <h2 className='footer-text'>© 2024 SungminYoon All rights reserved.</h2>
             </Col>
             <Col xs={1} sm={2}>
             </Col>

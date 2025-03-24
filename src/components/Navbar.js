@@ -14,7 +14,7 @@ function NavbarComponents() {
         <Container className='navbar-items'>
           {/* <Navbar.Brand href="/"><b>Yoonmin.Film</b></Navbar.Brand> */}
           <Navbar.Brand href='/'><img src={BannerLogo} alt="logo" className='banner-img'/></Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className='nav-dropdown'>
             <NavDropdown title="Project" id="basic-nav-dropdown">
               <NavDropdown.Item href="../project/mainWorkPhoto">
                 Original(Digital)
