@@ -44,7 +44,7 @@ function NavbarComponents() {
               </NavDropdown.Item> */}
             </NavDropdown>
             <Nav.Link href="/about" >about</Nav.Link>
-            <Nav.Link href="/shop" >shop</Nav.Link>
+            {/* <Nav.Link href="/shop" >shop</Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>

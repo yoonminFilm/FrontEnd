@@ -26,7 +26,7 @@ function App() {
         <Route path="/project/collaboWork" element={<CollaborativeWorkPage />} />
         {/* <Route path="/project/mainWorkVideo" element={<FilmVideoWorkPage />} />
         <Route path="/project/youtubeWork" element={<YoutubeWorkPage />} />  */}
-        <Route path="/shop" element={<ShopPage />} />
+        {/* <Route path="/shop" element={<ShopPage />} /> */}
       </Routes>
       <FooterComponents />
       </div>
