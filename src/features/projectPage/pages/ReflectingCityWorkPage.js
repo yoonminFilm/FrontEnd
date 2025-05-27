@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
-import ProjectInfoComponent from "../components/ProjectInfoComponent";
+// import ProjectInfoComponent from "../components/ProjectInfoComponent";
 
 const ReflectingCityWorkPage = () =>{
     const imageUrls = [

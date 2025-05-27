@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
-import ProjectInfoComponent from "../components/ProjectInfoComponent";
 
 const CollaborativeWorkPage = () =>{
     const imageUrls = [
@@ -21,7 +20,6 @@ const CollaborativeWorkPage = () =>{
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
             <ProjectImageComponent images={imageUrls} />
-            {/* <ProjectInfoComponent title="Reflecting City" description="example" images={projectInfoImg}  onButtonClick="example" /> */}
         </div>
     );
 }

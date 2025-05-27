@@ -22,7 +22,9 @@ function NavbarComponents() {
               <NavDropdown.Item href="../project/mainWorkPhoto">
                 Film
               </NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="../project/euMonthTravel">
+                The name of youth(EU, 28 days of records)
+              </NavDropdown.Item>
               <NavDropdown.Item href="../project/urbanPattern">
                 Urban Pattern
               </NavDropdown.Item>
@@ -31,7 +33,10 @@ function NavbarComponents() {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="../project/snap">
-                Snap
+                Portrait
+              </NavDropdown.Item>
+              <NavDropdown.Item href="../project/snap">
+                Wedding
               </NavDropdown.Item>
               <NavDropdown.Item href="../project/collaboWork">
                 Collaborative work
