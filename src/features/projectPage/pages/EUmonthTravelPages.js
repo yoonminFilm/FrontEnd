@@ -3,32 +3,28 @@ import ProjectImageComponent from "../components/ProjectImageComponent";
 
 const EUMonthTravelPage = () =>{
     const imageUrls = [
-        // snow
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow1.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow2.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow3.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow4.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow5.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/snow6.jpg",
-        // green 
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/green.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/green2.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/green3.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/green4.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/green5.jpg",
-        // sky
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/sky1.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/sky2.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/sky3.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/sky4.jpg",
-        //square
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/square1.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/square2.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/suqare2.jpg",
-        // reflecting 
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/reflecting1.jpg",
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectDigitalWork/reflecting2.jpg",
-        
+        // paris
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris1.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris2.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris3.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris4.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris5.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris6.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris7.jpg",
+        // Italy
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy1.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy2.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy3.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy4.jpg",        
+        // Chamonix
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix1.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix2.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix3.jpg",
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix4.jpg",
+        // monaco
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/monaco1.jpg",
+        //Swiss
+            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Swiss1.jpg",
 
         ];
 
