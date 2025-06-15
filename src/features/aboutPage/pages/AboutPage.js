@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -14,6 +14,7 @@ const AboutPage = () =>{
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const personalImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/p_img_1.JPG";
     const [sessionType, setSessionType] = useState("");
+    const [minDate, setMinDate] = useState("");
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -21,6 +22,14 @@ const AboutPage = () =>{
         message: "",
         sessionDate: "",
     });
+
+    useEffect(() => {
+        const today = new Date();
+        const offset = today.getTimezoneOffset();
+        const localDate = new Date(today.getTime() - offset * 60 * 1000);
+        const formatted = localDate.toISOString().split("T")[0]; // 'YYYY-MM-DD'
+        setMinDate(formatted);
+    }, []);
 
     const handleSessionTypeClick = (type) => {
         setSessionType(type);
@@ -137,7 +146,7 @@ const AboutPage = () =>{
                                             looking for.
                                         </p>
                                         <div className="session-buttons ">
-                                            {["PORTRAIT(Solo, Couple, Family)", "WEDDING", "COMMERCIAL", "COOPERATION", "OTHER"].map((type) => (
+                                            {["PORTRAIT(Solo, Couple, Family)", "WEDDING", "AD(advertisements)", "COOPERATION", "OTHER"].map((type) => (
                                                 <Button
                                                     type="button"
                                                     variant="light"
@@ -179,6 +188,7 @@ const AboutPage = () =>{
                                         <input
                                             className="session-date-input"
                                             type="date"
+                                            min={minDate} 
                                             required
                                             name="sessionDate"
                                             value={formData.sessionDate}
