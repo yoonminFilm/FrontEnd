@@ -35,7 +35,11 @@ const FilmDigitalWorkPage = () =>{
     return (
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
-            <ProjectImageComponent images={imageUrls} />
+            <ProjectImageComponent 
+                title="Original Film work"
+                description="사랑으로"
+                images={imageUrls} 
+            />
         </div>
     );
 }

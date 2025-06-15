@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
-// import ProjectInfoComponent from "../components/ProjectInfoComponent";
 
 const ReflectingCityWorkPage = () =>{
     const imageUrls = [
@@ -22,8 +21,11 @@ const ReflectingCityWorkPage = () =>{
     return (
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
-            <ProjectImageComponent images={imageUrls} />
-            {/* <ProjectInfoComponent title="Reflecting City" description="example" images={projectInfoImg}  onButtonClick="example" /> */}
+            <ProjectImageComponent 
+                title="Reflecting City"
+                description="도시의 이면 안에 비춰지는"
+                images={imageUrls} 
+            />
         </div>
     );
 }

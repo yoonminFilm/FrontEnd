@@ -18,16 +18,18 @@ function App() {
     <div className="App">
       <NavbarComponents />
       <Routes>
+        {/* Main */}
         <Route path="/" element={<MainPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        {/* Project */}
         <Route path="/project/mainWorkPhoto" element={<FilmDigitalWorkPage />} />
         <Route path="/project/euMonthTravel" element={<EUMonthTravelPage />} />
         <Route path="/project/urbanPattern" element={<UrbanpatternWorkPage/>} />
         <Route path="/project/reflectingCity" element={<ReflectingCityWorkPage />} />
         <Route path="/project/snap" element={<PortraitSnapWorkPage />} />
         <Route path="/project/collaboWork" element={<CollaborativeWorkPage />} />
-        {/* <Route path="/project/mainWorkVideo" element={<FilmVideoWorkPage />} />
-        <Route path="/project/youtubeWork" element={<YoutubeWorkPage />} />  */}
+        {/* About */}
+        <Route path="/about" element={<AboutPage />} />
+        {/* Shop */}
         {/* <Route path="/shop" element={<ShopPage />} /> */}
       </Routes>
       <FooterComponents />

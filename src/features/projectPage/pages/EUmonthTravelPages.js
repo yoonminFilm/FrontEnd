@@ -35,7 +35,10 @@ const EUMonthTravelPage = () =>{
     return (
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
-            <ProjectImageComponent images={imageUrls} />
+            <ProjectImageComponent 
+                title="유럽 28일간의 기록" 
+                description="청춘의 한달 배낭 여행기" 
+                images={imageUrls} />
         </div>
     );
 }

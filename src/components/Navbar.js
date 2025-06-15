@@ -35,20 +35,13 @@ function NavbarComponents() {
               <NavDropdown.Item href="../project/snap">
                 Portrait
               </NavDropdown.Item>
-              <NavDropdown.Item href="../project/snap">
-                Wedding
-              </NavDropdown.Item>
               <NavDropdown.Item href="../project/collaboWork">
                 Collaborative work
-              </NavDropdown.Item>
-              {/* <NavDropdown.Item href="../project/mainWorkVideo">
-                yoonminFilim
-              </NavDropdown.Item>
-              <NavDropdown.Item href="../project/youtubeWork">
-                Youtube
-              </NavDropdown.Item> */}
+              </NavDropdown.Item>              
             </NavDropdown>
+            {/* About nav tap */}
             <Nav.Link href="/about" >about</Nav.Link>
+            {/* Shop nav tap -> 차후 업데이트 예정*/}
             {/* <Nav.Link href="/shop" >shop</Nav.Link> */}
           </Nav>
         </Container>

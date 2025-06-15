@@ -33,7 +33,11 @@ const UrbanpatternWorkPage = () =>{
     return (
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
-            <ProjectImageComponent images={imageUrls} />
+            <ProjectImageComponent 
+                title="UrbanPattern"
+                description="도시의 숨은 패턴들"
+                images={imageUrls} 
+            />
         </div>
     );
 }

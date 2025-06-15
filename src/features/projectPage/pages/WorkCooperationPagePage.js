@@ -19,7 +19,10 @@ const CollaborativeWorkPage = () =>{
     return (
         <div className="project-container">
             {/* 이미지 배열을 props로 전달 */}
-            <ProjectImageComponent images={imageUrls} />
+            <ProjectImageComponent 
+                title="Collaboration History"
+                description="협업 결과물"
+                images={imageUrls} />
         </div>
     );
 }
