@@ -1,11 +1,11 @@
 import React,{useEffect,useState} from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
 
-const ReflectingCityWorkPage = () =>{
+const DigitalWorkPage = () =>{
     const [imageData, setImageData] = useState(null);
 
     useEffect(() => {
-        fetch("/imageJson/reflectionCity.json")
+        fetch("/imageJson/digital.json")
             .then((res) => res.json())
             .then((data) => setImageData(data))
             .catch((err) => console.error("JSON 로딩 실패:", err));
@@ -27,4 +27,4 @@ const ReflectingCityWorkPage = () =>{
     );
 }
 
-export default ReflectingCityWorkPage;
+export default DigitalWorkPage;

@@ -1,28 +1,28 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
 
 const CollaborativeWorkPage = () =>{
-    const imageUrls = [
-        "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_1.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_1_2.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_2.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_3.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_4.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_5.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_6.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_7.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_8.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_9.jpg",
-        // "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectReflectingCityWork/reflecting_10.jpg",
-        ];
+    const [imageData, setImageData] = useState(null);
+
+    useEffect(() => {
+        fetch("/imageJson/cooperation.json")
+            .then((res) => res.json())
+            .then((data) => setImageData(data))
+            .catch((err) => console.error("JSON 로딩 실패:", err));
+    }, []);
+
+    if (!imageData) return <div>Loading...</div>;
+
+    // 모든 이미지를 하나의 배열로 합치기
+    const allImages = Object.values(imageData.images).flat();
 
     return (
         <div className="project-container">
-            {/* 이미지 배열을 props로 전달 */}
             <ProjectImageComponent 
-                title="Collaboration History"
-                description="협업 결과물"
-                images={imageUrls} />
+                title={imageData.title} 
+                description={imageData.description} 
+                images={allImages} 
+            />
         </div>
     );
 }

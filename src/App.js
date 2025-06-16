@@ -4,12 +4,13 @@ import FooterComponents from './components/Footer'
 import MainPage from './features/mainPage/pages/MainPage'
 import AboutPage from './features/aboutPage/pages/AboutPage';
 import ShopPage from './features/shopPage/pages/ShopPage';
-import FilmDigitalWorkPage from './features/projectPage/pages/FilmDigitalWorkPage';
+import FilmWorkPage from './features/projectPage/pages/FilmWorkPage';
 import ReflectingCityWorkPage from './features/projectPage/pages/ReflectingCityWorkPage';
 import UrbanpatternWorkPage from './features/projectPage/pages/UrbanPatternWorkPage';
 import PortraitSnapWorkPage from './features/projectPage/pages/PortraitSnapWorkPage';
 import CollaborativeWorkPage from './features/projectPage/pages/WorkCooperationPagePage';
 import EUMonthTravelPage from './features/projectPage/pages/EUmonthTravelPages';
+import DigitalWorkPage from './features/projectPage/pages/DigitalWorkPage';
 import './assets/fonts/Pretendard/web/static/pretendard.css';
 import './App.css';
 
@@ -21,7 +22,8 @@ function App() {
         {/* Main */}
         <Route path="/" element={<MainPage />} />
         {/* Project */}
-        <Route path="/project/mainWorkPhoto" element={<FilmDigitalWorkPage />} />
+        <Route path="/project/DigitalWork" element={<DigitalWorkPage />} />
+        <Route path="/project/FilmWork" element={<FilmWorkPage />} />
         <Route path="/project/euMonthTravel" element={<EUMonthTravelPage />} />
         <Route path="/project/urbanPattern" element={<UrbanpatternWorkPage/>} />
         <Route path="/project/reflectingCity" element={<ReflectingCityWorkPage />} />

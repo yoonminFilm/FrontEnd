@@ -1,40 +1,28 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import ProjectImageComponent from "../components/ProjectImageComponent";
 
 const EUMonthTravelPage = () =>{
-    const imageUrls = [
-        // paris
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris1.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris2.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris3.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris4.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris5.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris6.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/paris7.jpg",
-        // Italy
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy1.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy2.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy3.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy4.jpg",        
-        // Chamonix
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix1.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix2.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix3.jpg",
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Chamonix4.jpg",
-        // monaco
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/monaco1.jpg",
-        //Swiss
-            "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Swiss1.jpg",
+    const [imageData, setImageData] = useState(null);
 
-        ];
+    useEffect(() => {
+        fetch("/imageJson/euMonthTravel.json")
+            .then((res) => res.json())
+            .then((data) => setImageData(data))
+            .catch((err) => console.error("JSON 로딩 실패:", err));
+    }, []);
+
+    if (!imageData) return <div>Loading...</div>;
+
+    // 모든 이미지를 하나의 배열로 합치기
+    const allImages = Object.values(imageData.images).flat();
 
     return (
         <div className="project-container">
-            {/* 이미지 배열을 props로 전달 */}
             <ProjectImageComponent 
-                title="유럽 28일간의 기록" 
-                description="청춘의 한달 배낭 여행기" 
-                images={imageUrls} />
+                title={imageData.title} 
+                description={imageData.description} 
+                images={allImages} 
+            />
         </div>
     );
 }
