@@ -16,14 +16,14 @@ function NavbarComponents() {
           <Navbar.Brand href='/'><img src={BannerLogo} alt="logo" className='banner-img'/></Navbar.Brand>
           <Nav className='nav-dropdown'>
             <NavDropdown title="Project" id="basic-nav-dropdown">
+              <NavDropdown.Item href="../project/euMonthTravel">
+                The name of youth(EU, 28 days of records)
+              </NavDropdown.Item>
               <NavDropdown.Item href="../project/digitalWork">
                 Original(Digital)
               </NavDropdown.Item>
               <NavDropdown.Item href="../project/filmWork">
-                Film
-              </NavDropdown.Item>
-              <NavDropdown.Item href="../project/euMonthTravel">
-                The name of youth(EU, 28 days of records)
+                Original(Film)
               </NavDropdown.Item>
               <NavDropdown.Item href="../project/urbanPattern">
                 Urban Pattern

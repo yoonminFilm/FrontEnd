@@ -3,24 +3,57 @@ import Carousel from 'react-bootstrap/Carousel';
 import './projectCarousel.css'
 
 function ProjectCarousel() {
-  const filmDigitalMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/film_main_img.jpg";
+  const EU25MainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy1.jpg";
+  const DigitalMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/film_main_img.jpg";
+  const filmMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectFilmWork/DailyGreen5.jpg";
   const urbanpatternMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectUrbanPatternWork/urbanpattern_1.jpg";
   const reflectingCityMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/urbanpattern_main_img.jpg";
   const snapMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/snap_main_image.JPG";
+  // const collabrativeMainImg = "";
   
   return (
     <Carousel data-bs-theme="white">
       <Carousel.Item>
-        <Link to="../project/mainWorkPhoto">
+        <Link to="../project/euMonthTravel">
         <img
           className="d-block w-100"
-          src={filmDigitalMainImg}
-          alt="Film & Digital Work"
+          src={EU25MainImg}
+          alt="EU Work"
         />
         <Carousel.Caption>
-          <h5>Project 1. Film & Digital Work</h5>
+          <h5>Project 1. 28 days of European records</h5>
           <p style={{color:"white"}}>
-            Original, Film & Digital work
+            28 days of European records
+          </p>
+        </Carousel.Caption>
+        </Link>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Link to="../project/digitalWork">
+        <img
+          className="d-block w-100"
+          src={DigitalMainImg}
+          alt="Digital Work"
+        />
+        <Carousel.Caption>
+          <h5>Project 2. Digital Work</h5>
+          <p style={{color:"white"}}>
+            Original, yoonmin_Film
+          </p>
+        </Carousel.Caption>
+        </Link>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Link to="../project/filmWork">
+        <img
+          className="d-block w-100"
+          src={filmMainImg}
+          alt="Film Work"
+        />
+        <Carousel.Caption>
+          <h5>Project 3. Film Work</h5>
+          <p style={{color:"white"}}>
+            Original Film, yoonmin_Film
           </p>
         </Carousel.Caption>
         </Link>
@@ -33,7 +66,7 @@ function ProjectCarousel() {
           alt="Urbanpattern"
         />
         <Carousel.Caption>
-          <h5>Project 2. Urbanpattern of City</h5>
+          <h5>Project 4. Urbanpattern of City</h5>
           <p style={{color:"white"}}>
             Original, Urban Pattern
           </p>
@@ -48,7 +81,7 @@ function ProjectCarousel() {
           alt="reflecting city"
         />
         <Carousel.Caption>
-          <h5>Project 3. Reflecting City</h5>
+          <h5>Project 5. Reflecting City</h5>
           <p style={{color:"white"}}>
             Capturing the city created by light with water
           </p>
@@ -63,7 +96,7 @@ function ProjectCarousel() {
           alt="Snap"
         />
         <Carousel.Caption>
-          <h5>Project 4. Portrait Snap</h5>
+          <h5>Project 6. Portrait Snap</h5>
           <p style={{color:"white"}}>
             Cinematic, Original portrait snap.
           </p>
