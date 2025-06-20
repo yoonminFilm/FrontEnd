@@ -1,0 +1,48 @@
+/* 전체 컨테이너 설정*/
+.project-container {
+  padding: 0 6.5vw;
+}
+
+/* 헤더 컨테이너 설정*/
+.content-wrapper {
+  margin-top: 7vh;
+  text-align: center;
+}
+.content-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 5vh;
+}
+
+/* 이미지 전체 설정*/
+.masonry-gallery {
+    column-count: 2;
+    column-gap: 10px;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .masonry-gallery {
+        grid-template-columns: (2,1fr);
+    }
+}
+
+/* 이미지 개별 설정*/
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.masonry-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
