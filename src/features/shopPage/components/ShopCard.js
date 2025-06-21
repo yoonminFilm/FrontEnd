@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import'./shopCard.css';
+import'../styles/shopCard.css';
 
 const  ShopCard =({title, description, imageUrl, onButtonClick}) =>{
     const shopImgExample ="https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/shop_example_img.jpg";

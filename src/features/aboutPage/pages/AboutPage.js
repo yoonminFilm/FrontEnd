@@ -7,7 +7,7 @@ import AboutText from "../components/AboutText";
 import OverlayViewPage from "../../../components/OverlayView";
 import Button from 'react-bootstrap/Button';
 import { postInquiry } from "../services/aboutServies";
-import './about-page.css';
+import '../styles/aboutPage.css';
 
 
 const AboutPage = () =>{

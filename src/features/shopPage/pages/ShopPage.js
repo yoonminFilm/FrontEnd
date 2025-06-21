@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Container from 'react-bootstrap/Container';
 import ShopCard from "../components/ShopCard";
 import { Row, Col } from "react-bootstrap";
-import './shopPage.css';
+import '../styles/shopPage.css';
 import OverlayViewPage from "../../../components/OverlayView";
 
 const ShopPage =()=>{

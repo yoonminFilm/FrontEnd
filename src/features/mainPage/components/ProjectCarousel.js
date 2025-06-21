@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
-import './projectCarousel.css'
+import '../styles/projectCarousel.css'
 
 function ProjectCarousel() {
   const EU25MainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy1.jpg";

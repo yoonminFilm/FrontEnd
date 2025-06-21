@@ -1,5 +1,5 @@
 import React from "react";
-import '../pages/about-page.css';
+import '../styles/aboutPage.css';
 
 const AboutText = ()=>{
     return(
