@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import emailIcon from '../assets/images/email-icons.svg';
 import instagramIcon from '../assets/images/instagram-logo.png';
 import youtubeIcon from '../assets/images/youtube-logo.png';
-import './components.css';
+import './styles/components.css';
 
 function FooterComponents() {
   return (

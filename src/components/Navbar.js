@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import BannerLogo from '../assets/images/banner-img.png';
-import './components.css'
+import './styles/components.css'
 
 function NavbarComponents() {
   

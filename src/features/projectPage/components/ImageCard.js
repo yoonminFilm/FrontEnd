@@ -19,7 +19,7 @@ const ImageCard = ({ src, index }) => {
     <motion.div
       ref={ref}
       className="masonry-item"
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={visible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
