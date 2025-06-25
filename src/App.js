@@ -3,7 +3,7 @@ import NavbarComponents from './components/Navbar';
 import FooterComponents from './components/Footer'
 import MainPage from './features/mainPage/pages/MainPage'
 import AboutPage from './features/aboutPage/pages/AboutPage';
-import ShopPage from './features/shopPage/pages/ShopPage';
+// import ShopPage from './features/shopPage/pages/ShopPage';
 import FilmWorkPage from './features/projectPage/pages/FilmWorkPage';
 import ReflectingCityWorkPage from './features/projectPage/pages/ReflectingCityWorkPage';
 import UrbanpatternWorkPage from './features/projectPage/pages/UrbanPatternWorkPage';

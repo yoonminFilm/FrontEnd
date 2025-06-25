@@ -25,20 +25,32 @@ const OverlayImage = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="modal-overlay"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          onClick={onClose}
+            className="modal-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
         >
-          <motion.div
-            className="modal-content"
-            initial={{ scale: 0.95 }}
-            animate={{ scale: 1 }}
-            exit={{ scale: 0.95 }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img src={images[currentIndex]} alt="enlarged" className="modal-image" />
+            <motion.div
+                className="modal-content"
+                initial={{ scale: 0.95 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.95 }}
+                onClick={(e) => e.stopPropagation()}
+            >
+            {/* 이미지 페이드 전환 */}
+            <AnimatePresence mode="wait">
+            <motion.img
+                key={images[currentIndex]}
+                src={images[currentIndex]}
+                alt="enlarged"
+                className="modal-image"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                />
+            </AnimatePresence>
             <CloseButton className="modal-close" onClick={onClose} />
             <button className="modal-prev" onClick={() => setCurrentIndex((currentIndex - 1 + total) % total)}>
                 <img src={BackArrow} alt="이전 버튼 아이콘"/>
