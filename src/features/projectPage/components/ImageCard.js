@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-const ImageCard = ({ src, index }) => {
+const ImageCard = ({ src, index, onClick }) => {
   const { ref, inView } = useInView({ threshold: 0.3 });
   const [visible, setVisible] = useState(false);
 
@@ -22,6 +22,8 @@ const ImageCard = ({ src, index }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={visible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, ease: "easeOut" }}
+      onClick={()=>onClick(index)}
+      style={{cursor: "pointer"}}
     >
       <LazyLoadImage
         src={src}

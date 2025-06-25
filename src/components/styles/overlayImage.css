@@ -1,0 +1,67 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 93vw;
+  max-height: 95vh;
+}
+
+.modal-image {
+  width: auto;
+  height: 94vh;
+}
+
+.modal-close,
+.modal-prev,
+.modal-next {
+  position: absolute;
+  background: #ffff;
+  height: 100vh;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.modal-prev img ,
+.modal-next img{
+  width: 1.5vw;
+  height: 1.5vw;
+  color: black;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.modal-prev {
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+.modal-next {
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+}

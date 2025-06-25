@@ -1,10 +1,10 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 
-const ImageGrid = ({ images }) => (
+const ImageGrid = ({ images, onImageClick }) => (
   <div className="masonry-gallery">
-    {images.map((src, index) => (
-      <ImageCard key={index} src={src} index={index} />
+    {images.map((img, index) => (
+      <ImageCard key={index} src={img} index={index} onClick={onImageClick}/>
     ))}
   </div>
 );

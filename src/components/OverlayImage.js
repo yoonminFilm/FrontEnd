@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "../styles/imageModal.css";
+import { CloseButton } from "react-bootstrap";
+import "./styles/overlayImage.css";
+import BackArrow from "../assets/images/arrow_back_ios.svg";
+import ForwardArrow from "../assets/images/arrow_forward_ios.svg";
 
-const ImageModal = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }) => {
+const OverlayImage = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }) => {
   const total = images.length;
 
   const handleKeyDown = (e) => {
@@ -36,9 +39,13 @@ const ImageModal = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }) 
             onClick={(e) => e.stopPropagation()}
           >
             <img src={images[currentIndex]} alt="enlarged" className="modal-image" />
-            <button className="modal-close" onClick={onClose}>✕</button>
-            <button className="modal-prev" onClick={() => setCurrentIndex((currentIndex - 1 + total) % total)}>←</button>
-            <button className="modal-next" onClick={() => setCurrentIndex((currentIndex + 1) % total)}>→</button>
+            <CloseButton className="modal-close" onClick={onClose} />
+            <button className="modal-prev" onClick={() => setCurrentIndex((currentIndex - 1 + total) % total)}>
+                <img src={BackArrow} alt="이전 버튼 아이콘"/>
+            </button>
+            <button className="modal-next" onClick={() => setCurrentIndex((currentIndex + 1) % total)}>
+                <img src={ForwardArrow} alt="다음 버튼 아이콘"/>
+            </button>
           </motion.div>
         </motion.div>
       )}
@@ -46,4 +53,4 @@ const ImageModal = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }) 
   );
 };
 
-export default ImageModal;
+export default OverlayImage;
