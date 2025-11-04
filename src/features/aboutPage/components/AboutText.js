@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/aboutPage.css';
 
 const AboutText = ()=>{
@@ -24,16 +23,16 @@ const AboutText = ()=>{
                     </li>
                     <li>
                         <b> Filming & Editing(Youtube)</b><br/>
-                        <a href="https://www.youtube.com/@friendly-dark-army">FDA(FriendlyDarkArmy)</a><br />
-                        <a href="https://www.youtube.com/@zacchaeus.worship">삭개오 워십(zacchaeus worship)</a>
+                        <a href="https://www.youtube.com/@friendly-dark-army" target="_blank" rel="noreferrer">FDA(FriendlyDarkArmy)</a><br />
+                        <a href="https://www.youtube.com/@zacchaeus.worship" target="_blank" rel="noreferrer">삭개오 워십(zacchaeus worship)</a>
                     </li>
                 </ul>
                 <hr class="hr-divider"></hr>
                 <h6><b>⌜History⌟</b></h6>
-                <a href="https://nodeul.org/program/%ED%9B%84%EC%A7%80%ED%95%84%EB%A6%84-%ED%8F%AC%ED%86%A0%ED%8E%98%EC%8A%A4%ED%83%80-2024%E3%80%88%EC%B2%9C-%EA%B0%9C%EC%9D%98-%EA%BF%88%E3%80%89/" target="_blank">
+                <a href="https://nodeul.org/program/%ED%9B%84%EC%A7%80%ED%95%84%EB%A6%84-%ED%8F%AC%ED%86%A0%ED%8E%98%EC%8A%A4%ED%83%80-2024%E3%80%88%EC%B2%9C-%EA%B0%9C%EC%9D%98-%EA%BF%88%E3%80%89/" target="_blank" rel="noreferrer">
                     2024 후지필름 포토페스타 전시에서  단사진 작가
                 </a>
-                <a href="https://brand.aerok.net/cityeditor_sapporo" target="_blank">
+                <a href="https://brand.aerok.net/cityeditor_sapporo" target="_blank" rel="noreferrer">
                     2024 에어로케이&필름로그 삿포로 시티 에디터
                 </a>
                 <hr class="hr-divider"></hr>

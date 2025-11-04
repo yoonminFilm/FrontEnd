@@ -7,12 +7,13 @@ import AboutText from "../components/AboutText";
 import OverlayViewPage from "../../../components/OverlayView";
 import Button from 'react-bootstrap/Button';
 import { postInquiry } from "../services/aboutServies";
+import { getImageUrl, IMAGE_PATHS } from "../../../config/cdn";
 import '../styles/aboutPage.css';
 
 
 const AboutPage = () =>{
     const [isOverlayVisible, setOverlayVisible] = useState(false);
-    const personalImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/p_img_1.JPG";
+    const personalImg = getImageUrl(IMAGE_PATHS.PROFILE);
     const [sessionType, setSessionType] = useState("");
     const [minDate, setMinDate] = useState("");
     const [formData, setFormData] = useState({
@@ -146,17 +147,23 @@ const AboutPage = () =>{
                                             looking for.
                                         </p>
                                         <div className="session-buttons ">
-                                            {["PORTRAIT(Solo, Couple, Family)", "WEDDING", "AD(advertisements)", "COOPERATION", "OTHER"].map((type) => (
+                                            {[
+                                                { label: "PORTRAIT(Solo, Couple, Family)", value: "PORTRAIT" },
+                                                { label: "WEDDING", value: "WEDDING" },
+                                                { label: "AD(advertisements)", value: "EVENT" },
+                                                { label: "COOPERATION", value: "OTHER" },
+                                                { label: "OTHER", value: "OTHER" }
+                                            ].map((type) => (
                                                 <Button
                                                     type="button"
                                                     variant="light"
-                                                    key={type}
+                                                    key={type.value}
                                                     className={`session-button ${
-                                                        sessionType === type ? "active" : ""
+                                                        sessionType === type.value ? "active" : ""
                                                     }` }
-                                                    onClick={() => handleSessionTypeClick(type)}
+                                                    onClick={() => handleSessionTypeClick(type.value)}
                                                 >
-                                                    {type}
+                                                    {type.label}
                                                 </Button>
                                             ))}
                                         </div>

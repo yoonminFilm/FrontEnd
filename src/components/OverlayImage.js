@@ -8,18 +8,18 @@ import ForwardArrow from "../assets/images/arrow_forward_ios.svg";
 const OverlayImage = ({ isOpen, images, currentIndex, onClose, setCurrentIndex }) => {
   const total = images.length;
 
-  const handleKeyDown = (e) => {
-    if (e.key === "Escape") onClose();
-    if (e.key === "ArrowRight") setCurrentIndex((currentIndex + 1) % total);
-    if (e.key === "ArrowLeft") setCurrentIndex((currentIndex - 1 + total) % total);
-  };
-
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowRight") setCurrentIndex((currentIndex + 1) % total);
+      if (e.key === "ArrowLeft") setCurrentIndex((currentIndex - 1 + total) % total);
+    };
+
     if (isOpen) {
       window.addEventListener("keydown", handleKeyDown);
       return () => window.removeEventListener("keydown", handleKeyDown);
     }
-  }, [isOpen, currentIndex]);
+  }, [isOpen, currentIndex, onClose, setCurrentIndex, total]);
 
   return (
     <AnimatePresence>

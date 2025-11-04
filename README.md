@@ -2,6 +2,39 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Environment Setup
+
+### 1. Create Environment File
+
+Copy the example environment file and configure it:
+
+```bash
+cp .env.example .env
+```
+
+### 2. Configure Environment Variables
+
+Edit `.env` file with your settings:
+
+```env
+REACT_APP_API_BASE_URL=http://localhost:5002
+```
+
+For production, edit `.env.production`:
+
+```env
+REACT_APP_API_BASE_URL=https://your-backend-url.com
+```
+
+### 3. Backend URL Configuration
+
+The application uses environment variables to connect to the backend API:
+
+- **Development**: Uses `REACT_APP_API_BASE_URL` from `.env` (default: `http://localhost:5002`)
+- **Production**: Uses `REACT_APP_API_BASE_URL` from `.env.production`
+
+Make sure your backend server is running before starting the frontend.
+
 ## Available Scripts
 
 In the project directory, you can run:

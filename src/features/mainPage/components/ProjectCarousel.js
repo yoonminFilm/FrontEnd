@@ -1,14 +1,15 @@
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
+import { getImageUrl, IMAGE_PATHS } from '../../../config/cdn';
 import '../styles/projectCarousel.css'
 
 function ProjectCarousel() {
-  const EU25MainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/EU25/Italy1.jpg";
-  const DigitalMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/film_main_img.jpg";
-  const filmMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectFilmWork/DailyGreen5.jpg";
-  const urbanpatternMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/ProjectUrbanPatternWork/urbanpattern_1.jpg";
-  const reflectingCityMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/urbanpattern_main_img.jpg";
-  const snapMainImg = "https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/snap_main_image.JPG";
+  const EU25MainImg = getImageUrl(IMAGE_PATHS.PROJECTS.EU25_MAIN);
+  const DigitalMainImg = getImageUrl(IMAGE_PATHS.PROJECTS.DIGITAL_MAIN);
+  const filmMainImg = getImageUrl(IMAGE_PATHS.PROJECTS.FILM_MAIN);
+  const urbanpatternMainImg = getImageUrl(IMAGE_PATHS.PROJECTS.URBAN_PATTERN_MAIN);
+  const reflectingCityMainImg = getImageUrl(IMAGE_PATHS.PROJECTS.REFLECTING_CITY_MAIN);
+  const snapMainImg = getImageUrl(IMAGE_PATHS.PROJECTS.SNAP_MAIN);
   // const collabrativeMainImg = "";
   
   return (

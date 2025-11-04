@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import'../styles/shopCard.css';
 
 const  ShopCard =({title, description, imageUrl, onButtonClick}) =>{
-    const shopImgExample ="https://yoonminfilm-images.s3.ap-northeast-2.amazonaws.com/shop_example_img.jpg";
   return (
     <Card className="Card">
       <Card.Img variant="top" className="card-img" src={imageUrl} />

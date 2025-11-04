@@ -17,13 +17,13 @@ function FooterComponents() {
             <Col xs={1} sm={2}>
             </Col>
             <Col xs={2} sm={2}>
-              <a href='mailto:ysmgg1@naver.com' target='_blank'><img src={emailIcon} alt="email icon" className='footer-svg'/></a>
+              <a href='mailto:ysmgg1@naver.com' target='_blank' rel="noreferrer"><img src={emailIcon} alt="email icon" className='footer-svg'/></a>
             </Col>
             <Col xs={2} sm={2}>
-              <a href='https://www.instagram.com/yoonmin_film/' target='_blank'><img src={instagramIcon} alt="email icon" className='footer-svg'/></a>
+              <a href='https://www.instagram.com/yoonmin_film/' target='_blank' rel="noreferrer"><img src={instagramIcon} alt="instagram icon" className='footer-svg'/></a>
             </Col>
             <Col xs={2} sm={2}>
-              <a href='https://www.youtube.com/@friendly-dark-army' target='_blank'><img src={youtubeIcon} alt="email icon" className='footer-svg'/></a>
+              <a href='https://www.youtube.com/@friendly-dark-army' target='_blank' rel="noreferrer"><img src={youtubeIcon} alt="youtube icon" className='footer-svg'/></a>
             </Col>
           </Row>          
       </Container>
