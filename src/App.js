@@ -12,6 +12,7 @@ import CollaborativeWorkPage from './features/projectPage/pages/WorkCooperationP
 import EUMonthTravelPage from './features/projectPage/pages/EUmonthTravelPages';
 import DigitalWorkPage from './features/projectPage/pages/DigitalWorkPage';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import './assets/fonts/Pretendard/web/static/pretendard.css';
 import './App.css';
 
@@ -37,6 +38,7 @@ function App() {
       </Routes>
       <FooterComponents />
       <SpeedInsights />
+      <Analytics />
       </div>
   );
 }
